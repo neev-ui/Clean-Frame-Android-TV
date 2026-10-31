@@ -1,13 +1,14 @@
 This is an Extremely Important tutorial on how to Install Clean Frame on your android TV
 1. First of all you will need a Windows or Mac device Linux works too but i recommend using Windows or Mac OS
 2. Now you will have to download and install ADB (Android Debug Bridge) from https://developer.android.com/tools/adb
-3. Then after installing it you will have to enable Developer mode on your TV and enable USB debugging and Wifi debugging on your TV (If Wifi debugging is there if it's not there then only enable USB debugging)
-4.  Then you will want the IP address of your TV example 192.168.1.50
+3. Then after installing it you will have to enable Developer mode on your TV and enable USB debugging and Wifi debugging on your TV (If Wifi debugging is not there then only enable USB debugging)
+4.  Then you will want the IP address of your TV example 192.168.1.50 
 5.  Now make sure that both your tv and your computer are connected to the same Wifi
-6. Now open the terminal on your computer and run the following command but it will need to be edited a bit. So you will write adb connect your tv's ip address:5555
+6. Now open the terminal on your computer and run the following command but it will need to be edited a bit. So you will write adb connect your tv's ip address:5555 so if your tv ip adress is 192.168.1.50 you will write adb connect 192.168.1.50:5555
 7. Then you will type adb install cleanframe_tv.apk 
-8. Then open the Clean Frame app you just downloaded on your tv and go to setting and set Clean Frame as home                                                                                                                                      
-8. Then you will type adb shell pm disable-user --user 0 com.google.android.apps.tv.launcherx
-9. If that didn't work then you will type adb -s 192.168.29.117:5555 shell pm disable-user --user 0 com.google.android.tvlauncher
-I am not responsible for any damage on your TV if you did any step wrong or accidently bricked your TV
+8. Then open the Clean Frame app you just downloaded on your tv and go to setting and set Clean Frame as home                                                                          
+9. Then you will type adb shell pm disable-user --user 0 com.google.android.apps.tv.launcherx
+10. If that didn't work then you will type adb shell pm disable-user --user 0 com.google.android.tvlauncher
+
+I am not responsible for any damage to your TV if you did any step wrong or accidently bricked your TV I will not be responsible. This is the same as modifying your OS and multiple things can go wrong and if they do go wrong that's not my fault. This is extremely risky don't try to do it yourself if you don't know what you're doing.
                                                                                                                
